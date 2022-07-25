@@ -1,55 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Wheather_app</title>
 
-        <!-- ------------------------------reset.css------------------------------>
-        <link rel="stylesheet" href="assets/style/reset.css" />
-        <!-- ------------------------------font.css------------------------------>
-        <link rel="stylesheet" href="assets/style/font.css" />
-        <!-- ------------------------------fontAwesome.css------------------------------>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <!-- ------------------------------BootStrap.css------------------------------>
-        <link
-            rel="stylesheet"
-            href="assets/bootstrap/dist/css/bootstrap.min.css"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather_app</title>
 
-        <!-- ------------------------------Tailwind.css--------------------------------->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-            integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <!-- ------------------------------app.css------------------------------>
-        <link rel="stylesheet" href="assets/style/app.css" />
-    </head>
+    <!-- ------------------------------reset.css------------------------------>
+    <link rel="stylesheet" href="assets/style/reset.css" />
+    <!-- ------------------------------font.css------------------------------>
+    <link rel="stylesheet" href="assets/style/font.css" />
+    <!-- ------------------------------fontAwesome.css------------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ------------------------------BootStrap.css------------------------------>
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css" />
 
-    <body>
-        <header>
-            <div class="container flex justify-between items-center p-1 py-2">
-                <div class="title-header font-bold">
-                    <h2>Box shadow</h2>
+    <!-- ------------------------------Tailwind.css--------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ------------------------------app.css------------------------------>
+    <link rel="stylesheet" href="assets/style/app.css" />
+    <!-- ------------------------------slider.css------------------------------>
+    <link rel="stylesheet" href="assets/style/slider.css" />
+</head>
+
+<body>
+    <!-- header web -->
+    <header>
+        <div class="container flex justify-between items-center p-1 py-2">
+            <div class="title-header font-bold">
+                <h2>Box shadow</h2>
+            </div>
+            <div class="header-shadowCode flex items-center">
+                <i class="fa-brands fa-github"></i>
+                <button>show code</button>
+            </div>
+        </div>
+    </header>
+    <!--main -->
+    <main>
+        <aside>
+            <div class="container">
+                <div class="side-header flex justify-between items-center py-3">
+                    <h3 class="font-bold">customize shadow</h3>
+                    <button>add shadow</button>
                 </div>
-                <div class="header-shadowCode flex items-center">
-                    <i class="fa-brands fa-github"></i>
-                    <button>show code</button>
+                <div class="side-body">
+                    <div class="shadow-inset py-2">
+                        <input class="mr-2" type="checkbox" name="Active" id="Active" />
+                        <label class="mr-6" for="Active">Active</label>
+                        <input class="mr-2" type="checkbox" name="Inset" id="Inset" />
+                        <label for="Inset">Inset</label>
+                    </div>
+                    <div class="shadow-items">
+                        <div>
+                            <p>horizontal offset</p>
+                            <span>0px</span>
+                        </div>
+                        <input type="range" name="" id="" min="-100" max="100" step="1" />
+                    </div>
+                    <div class="shadow-items">
+                        <div>
+                            <p>horizontal offset</p>
+                            <span>0px</span>
+                        </div>
+                        <input type="range" name="" id="" min="-100" max="100" step="1" />
+                    </div>
+                    <div class="shadow-items">
+                        <div>
+                            <p>horizontal offset</p>
+                            <span>0px</span>
+                        </div>
+                        <input type="range" name="" id="" min="-100" max="100" step="1" />
+                    </div>
+                    <div class="shadow-items">
+                        <div>
+                            <p>horizontal offset</p>
+                            <span>0px</span>
+                        </div>
+                        <input type="range" name="" id="" min="-100" max="100" step="1" />
+                    </div>
+                    <div class="shadow-items">
+                        <div>
+                            <p>horizontal offset</p>
+                            <span>0px</span>
+                        </div>
+                        <input type="range" name="" id="" min="-100" max="100" step="1" />
+                    </div>
+                    <div class="shadow-item">
+                        <p>Color</p>
+                        <input type="text" placeholder="agb(123,345, 234)"/>
+                    </div>
                 </div>
             </div>
-        </header>
+        </aside>
+        <!-- <section></section>
+            <aside></aside> -->
+    </main>
 
-        <!-- ------------------script.js------------------------>
-        <script src="./assets/script/script.js"></script>
-    </body>
+    <!-- ------------------script.js------------------------>
+    <script src="./assets/script/script.js"></script>
+</body>
+
 </html>

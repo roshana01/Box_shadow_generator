@@ -2,13 +2,15 @@ body{
     font-family: "Product Sans Regular";
 }
 :root{
-    --main-color : #fff0f8;
+    --main-color : #fff6faef;
     --second-color : #ff429c;
-    --text--color:#fff
+    --text--color:#fff;
+    --border--color: #e6e6e6;
 }
 header {
     width: 100%;
     background-color: var(--main-color);
+    border-bottom: 1px solid var(--border--color);
 }
 
 .header-shadowCode button{
@@ -20,4 +22,47 @@ header {
 .header-shadowCode i{
     font-size: 1.5rem;
     margin-right: .9rem;
+}
+
+/* main */
+main{ 
+    width: 100%;
+}
+aside{
+    width: 30%;
+    background-color: var(--main-color);
+}
+.side-header{
+    border-bottom: 2px solid var(--border--color);
+}
+.side-header button{
+    background-color: var(--second-color);
+    padding: .3rem 1rem;
+    border-radius: 6px;
+    color:var(--text--color) ;
+    
+    
+}
+.shadow-inset{
+    display: flex;
+    align-items: center;
+    
+
+}
+.shadow-items{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    
+} 
+.shadow-items div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+.shadow-items p , span{
+    font-size: .9rem;
+}
+.shadow-item[input-text]{
+    border: 1px solid var(--border--color);
 }
