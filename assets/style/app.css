@@ -1,0 +1,23 @@
+body{
+    font-family: "Product Sans Regular";
+}
+:root{
+    --main-color : #fff0f8;
+    --second-color : #ff429c;
+    --text--color:#fff
+}
+header {
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.header-shadowCode button{
+    background-color: var(--second-color);
+    padding: .3rem 1rem;
+    border-radius: 6px;
+    color:var(--text--color) ;
+}
+.header-shadowCode i{
+    font-size: 1.5rem;
+    margin-right: .9rem;
+}
