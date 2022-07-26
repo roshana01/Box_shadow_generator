@@ -1,6 +1,11 @@
 body {
     font-family: "Product Sans Regular";
 }
+
+input{
+    font-family: 'Consolas';
+}
+
 :root {
     --main-color: #fff6faef;
     --second-color: #ff429c;
@@ -11,14 +16,13 @@ body {
 ::-webkit-scrollbar {
     height: 4px;
     width: 6px;
-    
 }
 ::-webkit-scrollbar-track {
     background: #ccc;
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color:  var(--second-color);
+    background-color: var(--second-color);
     border-radius: 10px;
 }
 
@@ -48,10 +52,9 @@ aside {
     height: 90vh;
     background-color: var(--main-color);
     overflow-y: scroll;
-
 }
 
-aside .container{
+aside .container {
     height: 100vh;
 }
 
@@ -71,7 +74,7 @@ aside .container{
 .shadow-items {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 .shadow-items .item {
     display: flex;
@@ -80,7 +83,7 @@ aside .container{
     margin-bottom: 0.8rem;
 }
 
-.shadow-items .item div{
+.shadow-items .item div {
     display: flex;
     width: 25%;
     justify-content: center;
@@ -91,12 +94,14 @@ aside .container{
 span {
     font-size: 0.9rem;
 }
+
 .shadow-color input[type="text"] {
     width: 100%;
-    margin: 1rem 0;
+    margin: .3rem 0;
     padding: 0.3rem 1rem;
-    border-radius: 5px;
+    border-radius: 7px;
     border: 1px solid var(--border--color);
+    font-size: .9rem;
 }
 .shadow-items input[type="number"] {
     width: 90%;
@@ -106,7 +111,10 @@ span {
     background-color: #fff;
     padding: 0.3rem;
     text-align: center;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
+}
+.shadow-color p {
+    font-size: .9rem;
 }
 
 .shadow-items input[type="number"]::-webkit-outer-spin-button,
@@ -114,5 +122,19 @@ span {
     -webkit-appearance: none;
     margin: 0;
 }
+/* section */
+section {
+    width: 50%;
+    height: 90vh;
+    background-color: #F3F4F6;
+}
 
-/* shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent block w-full sm:text-sm border border-gray-300 rounded-md appearance-none bg-white py-2 px-3 !w-14 text-center"  */
+/*side Bare right */
+.side-right .side-header {
+    border: none;
+}
+
+.side-right {
+    overflow-y: hidden;
+    border-left: 1px solid var(--border--color);;
+}

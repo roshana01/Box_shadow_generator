@@ -31,8 +31,8 @@
 
 <body>
     <!-- header web -->
-    <header>
-        <div class="container flex justify-between items-center p-1 py-2 shadow-sm">
+    <header class="shadow-lg">
+        <div class="container flex justify-between items-center p-1 py-2 ">
             <div class="title-header font-bold">
                 <h2>Box shadow</h2>
             </div>
@@ -43,12 +43,12 @@
         </div>
     </header>
     <!--main -->
-    <main>
+    <main class="flex h-full">
         <aside>
             <div class="container h-full">
                 <div class="side-header flex justify-between items-center pt-2 pb-5">
                     <h3 class="font-bold">customize shadow</h3>
-                    <button>add shadow</button>
+                    <button> shadow</button>
                 </div>
                 <div class="side-body">
                     <div class="shadow-inset py-2">
@@ -61,49 +61,108 @@
                         <div class="item">
                             <p>horizontal offset</p>
                             <div>
-                                <input type="number"  min="-100" miax="100">
+                                <input type="number" min="-100" miax="100">
                                 <span>px</span>
                             </div>
                         </div>
-                        <input type="range" name="" id="" min="-100" max="100" step="1" />
+                        <input type="range" name="" id="" min="-100" max="100" step="1" value="0"/>
                     </div>
                     <div class="shadow-items">
                         <div class="item">
-                            <p>horizontal offset</p>
+                            <p>Vertical offset</p>
                             <div>
-                                <input type="number"  min="-11" miax="100">
+                                <input type="number" min="-11" miax="100">
                                 <span>px</span>
                             </div>
                         </div>
-                        <input type="range" name="" id="" min="-100" max="100" step="1" />
+                        <input type="range" name="" id="" min="-100" max="100" step="1" value="0"/>
                     </div>
                     <div class="shadow-items">
                         <div class="item">
-                            <p>horizontal offset</p>
+                            <p>Blur radius</p>
                             <div>
-                                <input type="number"  min="-11" miax="100">
+                                <input type="number" min="-11" miax="100">
                                 <span>px</span>
                             </div>
                         </div>
-                        <input type="range" name="" id="" min="-100" max="100" step="1" />
+                        <input type="range" name="" id="" min="-100" max="100" step="1" value="0"/>
                     </div>
                     <div class="shadow-items">
                         <div class="item">
-                            <p>horizontal offset</p>
+                            <p>Spread radius</p>
                             <div>
-                                <input type="number"  min="-11" miax="100">
+                                <input type="number" min="-11" miax="100">
                                 <span>px</span>
                             </div>
                         </div>
-                        <input type="range" name="" id="" min="-100" max="100" step="1" />
+                        <input type="range" name="" id="" min="-100" max="100" step="1" value="0"/>
                     </div>
-                    <div class="shadow-color">
+                    <div class="shadow-color mt-4">
                         <p>Color</p>
-                        <input type="text" placeholder="agb(123,345, 234)" />
+                        <input type="text" value="rgb(123,345, 234)" />
                     </div>
                 </div>
             </div>
         </aside>
+
+        <section>
+            <div class="container h-full flex justify-center items-center">
+                <div class="box shadow bg-white" style="width: 220px;height: 220px;"></div>
+            </div>
+        </section>
+
+
+
+       <aside class="side-right"> 
+            <div class="container h-full">
+                <div class="side-header flex justify-between items-center pt-3 pb-4">
+                    <h3 class="font-bold">Box Properties</h3> 
+                </div>
+                <div class="side-body">
+                    <div class="shadow-color">
+                        <p>Background color</p>
+                        <input type="text" value="#fff" />
+                    </div>
+                    <div class="shadow-color">
+                        <p>Border color</p>
+                        <input type="text" value="transparent" />
+                    </div>
+                    
+                    
+                    <div class="shadow-items">
+                        <div class="item">
+                            <p>Border radius</p>
+                            <div>
+                                <input type="number"  min="0" miax="20">
+                                <span>rem</span>
+                            </div>
+                        </div>
+                        <input type="range" name="" id="" min="0" max="20" step="1" value="0"/>
+                    </div>
+                    <div class="shadow-items">
+                        <div class="item">
+                            <p>Height</p>
+                            <div>
+                                <input type="number"  min="0" miax="20">
+                                <span>rem</span>
+                            </div>
+                        </div>
+                        <input type="range" name="" id="" min="-0" max="20" step="1" value="0"/>
+                    </div>
+                    <div class="shadow-items">
+                        <div class="item">
+                            <p>Width</p>
+                            <div>
+                                <input type="number"  min="0" miax="20">
+                                <span>rem</span>
+                            </div>
+                        </div>
+                        <input type="range" name="" id="" min="0" max="20" step="1" value="0" />
+                    </div>
+                   
+                </div>
+            </div>
+        </aside> 
     </main>
 
     <!-- ------------------script.js------------------------>
