@@ -2,25 +2,28 @@ body {
     font-family: "Product Sans Regular";
 }
 
-input{
-    font-family: 'Consolas';
+input {
+    font-family: "Consolas";
 }
 
 :root {
-    --main-color: #fff6faef;
-    --second-color: #ff429c;
+    --main-color: #f9feff;
+    --second-color: #507c88;
     --text--color: #fff;
-    --border--color: #e6e6e6;
+    --border--color: #c5c5c5ab;
 }
+
 /* scoroll  */
 ::-webkit-scrollbar {
     height: 4px;
     width: 6px;
 }
+
 ::-webkit-scrollbar-track {
     background: #ccc;
     border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--second-color);
     border-radius: 10px;
@@ -28,6 +31,7 @@ input{
 
 header {
     width: 100%;
+    height: 10vh;
     background-color: var(--main-color);
     border-bottom: 1px solid var(--border--color);
 }
@@ -38,18 +42,30 @@ header {
     border-radius: 6px;
     color: var(--text--color);
 }
+
 .header-shadowCode i {
     font-size: 1.5rem;
     margin-right: 0.9rem;
+    opacity: 0.8;
+    transition: color 0.5s;
+    animation: wave 2s infinite linear both;
+}
+
+.header-shadowCode i:hover {
+    opacity: 1;
+    color: var(--second-color);
+    transform: scale(1.1);
 }
 
 /* main */
 main {
     width: 100%;
+    height: 80vh;
 }
+
 aside {
     width: 25%;
-    height: 90vh;
+    height: 100%;
     background-color: var(--main-color);
     overflow-y: scroll;
 }
@@ -61,21 +77,25 @@ aside .container {
 .side-header {
     border-bottom: 1px solid #757575a6;
 }
+
 .side-header button {
     background-color: var(--second-color);
     padding: 0.3rem 1rem;
     border-radius: 6px;
     color: var(--text--color);
 }
+
 .shadow-inset {
     display: flex;
     align-items: center;
 }
+
 .shadow-items {
     display: flex;
     flex-direction: column;
     padding: 0.5rem 0;
 }
+
 .shadow-items .item {
     display: flex;
     justify-content: space-between;
@@ -97,12 +117,13 @@ span {
 
 .shadow-color input[type="text"] {
     width: 100%;
-    margin: .3rem 0;
+    margin: 0.3rem 0;
     padding: 0.3rem 1rem;
     border-radius: 7px;
     border: 1px solid var(--border--color);
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
+
 .shadow-items input[type="number"] {
     width: 90%;
     border: 1px solid var(--border--color);
@@ -113,8 +134,9 @@ span {
     text-align: center;
     margin-right: 0.5rem;
 }
+
 .shadow-color p {
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 .shadow-items input[type="number"]::-webkit-outer-spin-button,
@@ -122,11 +144,12 @@ span {
     -webkit-appearance: none;
     margin: 0;
 }
+
 /* section */
 section {
     width: 50%;
-    height: 90vh;
-    background-color: #F3F4F6;
+    height: 100%;
+    background-color: #f3f4f6;
 }
 
 /*side Bare right */
@@ -136,5 +159,76 @@ section {
 
 .side-right {
     overflow-y: hidden;
-    border-left: 1px solid var(--border--color);;
+    border-left: 1px solid var(--border--color);
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--main-color);
+    border-top: 1px solid var(--border--color);
+}
+
+footer i {
+    font-size: 1.8rem;
+    
+}
+footer a:nth-child(1) {
+    color:  #0072b1;
+}
+
+footer a:nth-child(2) {
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-image: radial-gradient(circle farthest-corner at 35% 90%,
+            #fec564,
+            transparent 50%),
+        radial-gradient(circle farthest-corner at 0 140%,
+            #fec564,
+            transparent 50%),
+        radial-gradient(ellipse farthest-corner at 0 -25%,
+            #5258cf,
+            transparent 50%),
+        radial-gradient(ellipse farthest-corner at 20% -50%,
+            #5258cf,
+            transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 0,
+            #893dc2,
+            transparent 50%),
+        radial-gradient(ellipse farthest-corner at 60% -20%,
+            #893dc2,
+            transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 100%,
+            #d9317a,
+            transparent),
+        linear-gradient(#6559ca,
+            #bc318f 30%,
+            #e33f5f 50%,
+            #f77638 70%,
+            #fec66d 100%);
+}
+
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    75% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
