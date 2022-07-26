@@ -1,13 +1,13 @@
 :root{
-    --main-color : #fff0f8;
+    --main-color :  #fff6faef;
     --second-color : #ff429c;
     --text--color:#fff;
-    --border--color: #e6e6e6;
+    --border--color: #c5c5c5ab;
 }
-.shadow-items input {
+.shadow-items input[type="range"] {
     -webkit-appearance: none;
     width: 100%;
-    height: 6px;
+    height: 4px;
     border-radius: 5px;  
     background: #dddcdc;
     outline: none;
@@ -16,17 +16,17 @@
     transition: opacity .2s;
   }
   
-  .shadow-items input::-webkit-slider-thumb {
+  .shadow-items input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 15px;
     height: 15px;
     border-radius: 50%; 
-    background: var(--second-color);
+    background-color:  var(--second-color);
     cursor: pointer;
   }
   
-  .shadow-items input::-moz-range-thumb {
+  .shadow-items input[type="range"]::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;

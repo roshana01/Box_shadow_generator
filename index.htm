@@ -32,7 +32,7 @@
 <body>
     <!-- header web -->
     <header>
-        <div class="container flex justify-between items-center p-1 py-2">
+        <div class="container flex justify-between items-center p-1 py-2 shadow-sm">
             <div class="title-header font-bold">
                 <h2>Box shadow</h2>
             </div>
@@ -45,8 +45,8 @@
     <!--main -->
     <main>
         <aside>
-            <div class="container">
-                <div class="side-header flex justify-between items-center py-3">
+            <div class="container h-full">
+                <div class="side-header flex justify-between items-center pt-2 pb-5">
                     <h3 class="font-bold">customize shadow</h3>
                     <button>add shadow</button>
                 </div>
@@ -58,49 +58,52 @@
                         <label for="Inset">Inset</label>
                     </div>
                     <div class="shadow-items">
-                        <div>
+                        <div class="item">
                             <p>horizontal offset</p>
-                            <span>0px</span>
+                            <div>
+                                <input type="number"  min="-100" miax="100">
+                                <span>px</span>
+                            </div>
                         </div>
                         <input type="range" name="" id="" min="-100" max="100" step="1" />
                     </div>
                     <div class="shadow-items">
-                        <div>
+                        <div class="item">
                             <p>horizontal offset</p>
-                            <span>0px</span>
+                            <div>
+                                <input type="number"  min="-11" miax="100">
+                                <span>px</span>
+                            </div>
                         </div>
                         <input type="range" name="" id="" min="-100" max="100" step="1" />
                     </div>
                     <div class="shadow-items">
-                        <div>
+                        <div class="item">
                             <p>horizontal offset</p>
-                            <span>0px</span>
+                            <div>
+                                <input type="number"  min="-11" miax="100">
+                                <span>px</span>
+                            </div>
                         </div>
                         <input type="range" name="" id="" min="-100" max="100" step="1" />
                     </div>
                     <div class="shadow-items">
-                        <div>
+                        <div class="item">
                             <p>horizontal offset</p>
-                            <span>0px</span>
+                            <div>
+                                <input type="number"  min="-11" miax="100">
+                                <span>px</span>
+                            </div>
                         </div>
                         <input type="range" name="" id="" min="-100" max="100" step="1" />
                     </div>
-                    <div class="shadow-items">
-                        <div>
-                            <p>horizontal offset</p>
-                            <span>0px</span>
-                        </div>
-                        <input type="range" name="" id="" min="-100" max="100" step="1" />
-                    </div>
-                    <div class="shadow-item">
+                    <div class="shadow-color">
                         <p>Color</p>
-                        <input type="text" placeholder="agb(123,345, 234)"/>
+                        <input type="text" placeholder="agb(123,345, 234)" />
                     </div>
                 </div>
             </div>
         </aside>
-        <!-- <section></section>
-            <aside></aside> -->
     </main>
 
     <!-- ------------------script.js------------------------>
