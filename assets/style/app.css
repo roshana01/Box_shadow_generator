@@ -7,8 +7,9 @@ input {
 }
 
 :root {
-    --main-color: #f9feff;
-    --second-color: #507c88;
+    --main-color: #ffff;
+    /* --second-color: #366088; */
+    --second-color: #a25cff;
     --text--color: #fff;
     --border--color: #c5c5c5ab;
 }
@@ -16,7 +17,7 @@ input {
 /* scoroll  */
 ::-webkit-scrollbar {
     height: 4px;
-    width: 6px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {

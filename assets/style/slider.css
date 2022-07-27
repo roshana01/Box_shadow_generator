@@ -1,7 +1,7 @@
 :root {
-  --main-color: #f9feff;
-  --second-color: #507c88;
-    --text--color: #fff;
+  --main-color: #fff;
+  --second-color: #a25cff;
+  --text--color: #fff;
     --border--color: #c5c5c5ab;
 }
 .shadow-items input[type="range"] {
@@ -11,7 +11,6 @@
     border-radius: 5px;
     background: #dddcdc;
     outline: none;
-    opacity: 0.7;
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
 }
