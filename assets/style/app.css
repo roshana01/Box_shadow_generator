@@ -21,7 +21,7 @@ input {
 }
 
 ::-webkit-scrollbar-track {
-    background: #ccc;
+    background: #eaedf0;
     border-radius: 10px;
 }
 
@@ -89,6 +89,11 @@ aside .container {
 .shadow-inset {
     display: flex;
     align-items: center;
+    /* box-shadow: -50px 10px 15px -3px rgba(0,0,0,0.1); */
+}
+
+.shadow-inset input {
+    accent-color: var(--second-color);
 }
 
 .shadow-items {
@@ -117,7 +122,7 @@ span {
 }
 
 .shadow-color input[type="text"] {
-    width: 100%;
+    width: 70%;
     margin: 0.3rem 0;
     padding: 0.3rem 1rem;
     border-radius: 7px;
@@ -152,6 +157,11 @@ section {
     height: 100%;
     background-color: #f3f4f6;
 }
+.container .box {
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--text--color);
+}
 
 /*side Bare right */
 .side-right .side-header {
@@ -161,6 +171,10 @@ section {
 .side-right {
     overflow-y: hidden;
     border-left: 1px solid var(--border--color);
+}
+
+.side-right input[type="text"] {
+    width: 100%;
 }
 
 /* Footer */
@@ -174,10 +188,9 @@ footer {
 
 footer i {
     font-size: 1.8rem;
-    
 }
 footer a:nth-child(1) {
-    color:  #0072b1;
+    color: #0072b1;
 }
 
 footer a:nth-child(2) {
@@ -187,34 +200,49 @@ footer a:nth-child(2) {
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    background-image: radial-gradient(circle farthest-corner at 35% 90%,
+    background-image: radial-gradient(
+            circle farthest-corner at 35% 90%,
             #fec564,
-            transparent 50%),
-        radial-gradient(circle farthest-corner at 0 140%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle farthest-corner at 0 140%,
             #fec564,
-            transparent 50%),
-        radial-gradient(ellipse farthest-corner at 0 -25%,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 0 -25%,
             #5258cf,
-            transparent 50%),
-        radial-gradient(ellipse farthest-corner at 20% -50%,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 20% -50%,
             #5258cf,
-            transparent 50%),
-        radial-gradient(ellipse farthest-corner at 100% 0,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 100% 0,
             #893dc2,
-            transparent 50%),
-        radial-gradient(ellipse farthest-corner at 60% -20%,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 60% -20%,
             #893dc2,
-            transparent 50%),
-        radial-gradient(ellipse farthest-corner at 100% 100%,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 100% 100%,
             #d9317a,
-            transparent),
-        linear-gradient(#6559ca,
+            transparent
+        ),
+        linear-gradient(
+            #6559ca,
             #bc318f 30%,
             #e33f5f 50%,
             #f77638 70%,
-            #fec66d 100%);
+            #fec66d 100%
+        );
 }
-
 
 @keyframes wave {
     0% {

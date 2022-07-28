@@ -52,54 +52,64 @@
                 </div>
                 <div class="side-body">
                     <div class="shadow-inset py-2">
-                        <input class="mr-2" type="checkbox" name="Active" id="Active" />
-                        <label class="mr-6" for="Active">Active</label>
-                        <input class="mr-2" type="checkbox" name="Inset" id="Inset" />
+                        <input class="mr-2" type="checkbox" name="Inset" id="inset" />
                         <label for="Inset">Inset</label>
                     </div>
                     <div class="shadow-items">
                         <div class="item">
                             <p>horizontal offset</p>
                             <div>
-                                <input type="number" min="-100" miax="100">
+                                <input id="h-number" type="number" min="-100" miax="100">
                                 <span>px</span>
                             </div>
                         </div>
-                        <input type="range" name="" id="" min="-100" max="100" step="1" value="0" />
+                        <div class="relative range z-0">
+                            <input id="h-range" type="range" min="-100" max="100" step="1" value="0" />
+                        </div>
                     </div>
                     <div class="shadow-items">
                         <div class="item">
                             <p>Vertical offset</p>
                             <div>
-                                <input type="number" min="-11" miax="100">
+                                <input id="v-number" type="number" min="-11" miax="100">
                                 <span>px</span>
                             </div>
                         </div>
-                        <input type="range" name="" id="" min="-100" max="100" step="1" value="0" />
+                        <div class="relative range z-0">
+                            <input id="v-range" type="range" min="-100" max="100" step="1" value="7" />
+                        </div>
                     </div>
                     <div class="shadow-items">
                         <div class="item">
                             <p>Blur radius</p>
                             <div>
-                                <input type="number" min="-11" miax="100">
+                                <input id="b-number" type="number" min="-11" miax="100">
                                 <span>px</span>
                             </div>
                         </div>
-                        <input type="range" name="" id="" min="-100" max="100" step="1" value="0" />
+                        <div class="relative range z-0">
+                            <input id="b-range" type="range" min="-100" max="100" step="1" value="45" />
+                        </div>
                     </div>
                     <div class="shadow-items">
                         <div class="item">
                             <p>Spread radius</p>
                             <div>
-                                <input type="number" min="-11" miax="100">
+                                <input id="s-number" type="number" min="-11" miax="100">
                                 <span>px</span>
                             </div>
                         </div>
-                        <input type="range" name="" id="" min="-100" max="100" step="1" value="0" />
+                        <div class="relative range z-0">
+                            <input id="s-range" type="range" min="-100" max="100" step="1" value="0" />
+                        </div>
                     </div>
                     <div class="shadow-color mt-4">
                         <p>Color</p>
-                        <input type="text" value="rgb(123,345, 234)" />
+                        <div class="flex items-center justify-between">
+                            <input id="c-text" type="text" class="w-/21" value="#d9bdff" maxlength="7">
+                            <input id="c-picker" type="color" value="#d9bdff" />
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -107,7 +117,7 @@
 
         <section>
             <div class="container h-full flex justify-center items-center">
-                <div class="box shadow bg-white" style="width: 220px;height: 220px;"></div>
+                <div class="box"></div>
             </div>
         </section>
 
@@ -121,11 +131,11 @@
                 <div class="side-body">
                     <div class="shadow-color">
                         <p>Background color</p>
-                        <input type="text" value="#fff" />
+                        <input id ='box-color' type="text" value="#fff"/>
                     </div>
                     <div class="shadow-color">
                         <p>Border color</p>
-                        <input type="text" value="transparent" />
+                        <input id="boxBorder-color" type="text" value="transparent" />
                     </div>
 
 
@@ -133,31 +143,37 @@
                         <div class="item">
                             <p>Border radius</p>
                             <div>
-                                <input type="number" min="0" miax="20">
+                                <input id="border-number" type="number" min="0" miax="20">
                                 <span>rem</span>
                             </div>
                         </div>
-                        <input type="range" name="" id="" min="0" max="20" step="1" value="0" />
+                        <div class="relative range z-0">
+                            <input type="range" name="" id="box-borderRadius" min="0" max="10" step="1" value="0" />
+                        </div>
                     </div>
                     <div class="shadow-items">
                         <div class="item">
                             <p>Height</p>
                             <div>
-                                <input type="number" min="0" miax="20">
+                                <input id="height-number" type="number" min="0" miax="20">
                                 <span>rem</span>
                             </div>
                         </div>
-                        <input type="range" name="" id="" min="-0" max="20" step="1" value="0" />
+                        <div class="relative range z-0">
+                            <input type="range" name="" id="box-height" min="0" max="30" step="1" value="0" />
+                        </div>
                     </div>
                     <div class="shadow-items">
                         <div class="item">
                             <p>Width</p>
                             <div>
-                                <input type="number" min="0" miax="20">
-                                <span>rem</span>
+                                <input id="width-number" type="number" min="0" miax="20">
+                                <span>rem</span> 
                             </div>
                         </div>
-                        <input type="range" name="" id="" min="0" max="20" step="1" value="0" />
+                        <div class="relative range z-0">
+                            <input type="range" name="" id="box-width" min="0" max="30" step="1" value="0" />
+                        </div>
                     </div>
 
                 </div>
