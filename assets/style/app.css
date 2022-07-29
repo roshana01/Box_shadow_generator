@@ -261,3 +261,50 @@ footer a:nth-child(2) {
         transform: translateY(0);
     }
 }
+
+/* tooltip */
+
+.header-shadowCode {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.header-shadowCode .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid var(--second-color);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: -98%;
+    left: 66%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.header-shadowCode .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.header-shadowCode:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+

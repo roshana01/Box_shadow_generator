@@ -5,8 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wheather_app</title>
-
+    <title>Box-shadow</title>
+    <link rel="shortcut icon"
+        href="https://w7.pngwing.com/pngs/468/813/png-transparent-logo-brand-communication-design-others-angle-text-triangle.png"
+        type="image/x-icon">
     <!-- ------------------------------reset.css------------------------------>
     <link rel="stylesheet" href="assets/style/reset.css" />
     <!-- ------------------------------font.css------------------------------>
@@ -38,7 +40,9 @@
             </div>
             <div class="header-shadowCode flex items-center">
                 <i class="fa-brands fa-github"></i>
-                <button>show code</button>
+                <button id="copy-code">
+                    <span class="tooltiptext" id="myTooltip">Click to copy</span>
+                    copy code</button>
             </div>
         </div>
     </header>
@@ -131,7 +135,7 @@
                 <div class="side-body">
                     <div class="shadow-color">
                         <p>Background color</p>
-                        <input id ='box-color' type="text" value="#fff"/>
+                        <input id='box-color' type="text" value="#fff" />
                     </div>
                     <div class="shadow-color">
                         <p>Border color</p>
@@ -168,7 +172,7 @@
                             <p>Width</p>
                             <div>
                                 <input id="width-number" type="number" min="0" miax="20">
-                                <span>rem</span> 
+                                <span>rem</span>
                             </div>
                         </div>
                         <div class="relative range z-0">

@@ -18,7 +18,7 @@ const boxWidth = document.querySelector("#box-width");
 const borderNumber = document.querySelector("#border-number");
 const heightNumber = document.querySelector("#height-number");
 const widthNumber = document.querySelector("#width-number");
-
+const copyBtn = document.querySelector("#copy-code");
 
 var valHorizont = 0;
 var valVertical = 7;
@@ -66,25 +66,25 @@ picker.addEventListener("input", (ev) => {
     shadowGenerator();
 });
 
-horizontalNumber.addEventListener("keydown", (ev) => {
+horizontalNumber.addEventListener("keyup", (ev) => {
     // console.log(ev.target.value);
     valHorizont = ev.target.value;
     horizontalRange.value = valHorizont;
     shadowGenerator();
 });
-verticalNumber.addEventListener("keydown", (ev) => {
+verticalNumber.addEventListener("keyup", (ev) => {
     valVertical = ev.target.value;
     verticalRange.value = valVertical;
     shadowGenerator();
 });
-blurNumber.addEventListener("keydown", (ev) => {
+blurNumber.addEventListener("keyup", (ev) => {
     valBulr = ev.target.value;
     blurRange.value = valBulr;
     shadowGenerator();
 });
-spreadNumber.addEventListener("keydown", (ev) => {
+spreadNumber.addEventListener("keyup", (ev) => {
     valSpread = ev.target.value;
-    spreadRangeblurRange.value = valSpread;
+    spreadRange.value = valSpread;
     shadowGenerator();
 });
 
@@ -112,27 +112,35 @@ boxRadiusInput.addEventListener("input", (ev) => {
 });
 boxHeight.addEventListener("input", (ev) => {
     boxShad.style.height = `${ev.target.value}rem`;
-    heightNumber.value =ev.target.value;
+    heightNumber.value = ev.target.value;
 });
 boxWidth.addEventListener("input", (ev) => {
     boxShad.style.width = `${ev.target.value}rem`;
-    widthNumber.value =ev.target.value;
+    widthNumber.value = ev.target.value;
 });
 
 //! ////////////////////
 
-
 borderNumber.addEventListener("keyup", (ev) => {
     boxShad.style.borderRadius = `${ev.target.value}rem`;
-    boxRadiusInput.value= ev.target.value
-
+    boxRadiusInput.value = ev.target.value;
 });
 heightNumber.addEventListener("keyup", (ev) => {
     boxShad.style.height = `${ev.target.value}rem`;
-    boxHeight.value= ev.target.value
+    boxHeight.value = ev.target.value;
 });
 widthNumber.addEventListener("keyup", (ev) => {
     boxShad.style.width = `${ev.target.value}rem`;
-    boxWidth.value= ev.target.value
+    boxWidth.value = ev.target.value;
 });
 
+copyBtn.addEventListener("click", (ev) => {
+    let shadow = `box-shadow :${insetFalg} ${valHorizont}px ${valVertical}px ${valBulr}px ${valSpread}px ${valColor} `;
+    navigator.clipboard.writeText(shadow);
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = `Css Code Copied`;
+    
+    setTimeout(() => {
+        tooltip.innerHTML = `Click to copy`;
+    }, 3000);
+});
